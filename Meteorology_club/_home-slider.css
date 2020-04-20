@@ -1,0 +1,80 @@
+/* _home-slider.css version 2016-6-10 */
+
+/*
+Instrcutions to add slides:
+1) In css, find the last slide (i.e "#home-slider img.three") and add more below (i.e "#home-slider img.four")
+   Set "animation-delay" 10 more seconds than the previous one
+2) In templates folder, add the slide (i.e <img class="four" alt="put an alternate text here" title="put a title here" />) into zone--preface.tpl.php
+3) In css under "div#home-slider img", change total length of the animation (i.e 30s to 40s if you change 3 slides to 4 slides)
+4) In css under "@keyframes imageAnimation", change the percentages in line 3 and 4 as following:
+   - When there are 3 slides in total:
+     33.33% { opacity: 1 }
+     38.33% { opacity: 0 }
+   - When there are 4 slides in total:
+     25% { opacity: 1 }
+     30% { opacity: 0 }
+*/
+
+
+
+#home-slider {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+
+#home-slider img {
+	display: block;
+	position: absolute;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	zoom:1;
+/*	opacity: 0; */
+/*	z-index: -1; */
+/*	-webkit-animation: imageAnimation 70s linear infinite 0s; /* imageAnimation + total lengh of the animation */
+/* 	animation: imageAnimation 70s linear infinite 0s; /* imageAnimation + total lengh of the animation */
+}
+/*
+#home-slider img.one {
+}
+#home-slider img.two {
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+	@media screen and (max-width: 580px) {
+	}
+	@media screen and (max-width: 450px) {
+	}
+
+/* 
+@-webkit-keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; z-index: 0; }
+    5% { opacity: 1; animation-timing-function: ease-out; z-index: 0; }
+    14.3% { opacity: 1; z-index: 0; } /* 100% divided by the number of slides */
+/*     19.3% { opacity: 0; z-index: 0; } /* the % in previous line + 5 */
+/*     20.3% { opacity: 0; z-index: -1; } /* the % in previous line + 1 */
+/*     99% { opacity: 0; z-index: -1; }
+    100% { opacity: 0; z-index: 0; }
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; z-index: 0; }
+    5% { opacity: 1; animation-timing-function: ease-out; z-index: 0; }
+    14.3% { opacity: 1; z-index: 0; } /* 100% divided by the number of slides */
+/*     19.3% { opacity: 0; z-index: 0; } /* the % in previous line + 5 */
+/*     20.3% { opacity: 0; z-index: -1; } /* the % in previous line + 1 */
+/*     99% { opacity: 0; z-index: -1; }
+    100% { opacity: 0; z-index: 0; }
+}
+*/

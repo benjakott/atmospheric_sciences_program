@@ -1,0 +1,78 @@
+/* CSS Document */
+
+/*------Research Group Taxonomy Display------*/
+.view-drupalcon-taxonomy-term .views-table {
+	box-sizing:border-box;
+	float:left;
+	width:32%;
+	margin-right:1%;
+	border:none;
+}
+.view-drupalcon-taxonomy-term .views-table caption {
+    font-size: 1.3em;
+    padding: .5em;
+    background-color: #f1b82d;
+	margin-top: .5em;
+}
+.view-drupalcon-taxonomy-term .views-table tr.even, tr.odd {
+    background-color: transparent;
+    border-bottom: 0px solid;
+    padding: 0.1em 0.6em;
+}
+.view-drupalcon-taxonomy-term .views-table tr.even td {
+    background: none repeat scroll 0% 0% transparent;
+}
+.view-drupalcon-taxonomy-term .views-table tr.odd td {
+    background: none repeat scroll 0% 0% transparent;
+}
+
+/*---------View Research Groups List-----*/
+.view-term table {
+	border:none;
+    width: 100%;
+}
+.view-term tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+    background: none repeat scroll 0% 0%;
+}
+
+/*-----------Taxonomy Terms------------*/
+.page-taxonomy article {
+	width:66%;
+	float:left;
+	/*margin-top: -1em;
+	margin-bottom: -1em;*/
+}
+.page-taxonomy .node-title {
+	font-size:1.1em;
+	margin-top:1.5em;
+}
+.page-taxonomy h2.field-content  {
+	/*font-size:1.1em;*/
+	margin-top:1.5em;
+	margin-bottom:0em;
+}
+
+.page-taxonomy .feed-icon {
+	display:none;
+}
+
+
+	/*----Taxonomy Read More buttons remove display----*/
+	.page-taxonomy .node-links ul li a {
+		display:none;
+	}
+	.page-taxonomy ul.inline li {
+		display: none;
+	}
+	.page-taxonomy .node ul.inline {
+		display:none;
+	}
+	/*.page-taxonomy nav {
+		display:none;
+	}*/
+	.page-taxonomy article .content.clearfix:after {
+		display: none;
+	}
+	.page-taxonomy article > .clearfix:last-child {
+		display: none;
+	}

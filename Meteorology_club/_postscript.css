@@ -1,0 +1,33 @@
+/* CSS Document */
+
+/*Postscript CSS*/
+#zone-postscript-wrapper {
+	position: relative;
+	top: 2.5em;
+    background-color: #fcf1d4;
+    width: 100%;
+    overflow: hidden;
+}
+#zone-postscript {
+	margin: 2.5em auto;
+	text-align: center;
+}
+#region-postscript-first p {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+}
+#region-postscript-first p a {
+	padding: 0.5em 1.5%;
+}
+#region-postscript-first p a img {
+	max-width: 100%;
+	height: auto !important;
+}
+
+@media screen and (max-width: 500px) {
+
+	#region-postscript-first p {
+		flex-wrap: wrap;
+	}
+}
